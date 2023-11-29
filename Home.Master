@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="RestauracionesUTC.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>RestauracionesUTC</title>
+    <link href="css/Estilos.css" rel="stylesheet" />
+    <link href="css/DataGrid.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+       <div>
+           <details>
+  <summary></summary>
+  <nav class="menu">
+
+    <a href="Inicio.aspx">INICIO</a>
+    <a href="Usuarios.aspx">USUARIOS</a>
+    <a href="Tecnicos.aspx">TECNICOS</a>
+    <a href="Equipo.aspx">EQUIPO</a>
+
+  </nav>
+</details>
+
+       </div>
+
+               <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
